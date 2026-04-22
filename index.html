@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeeshaan A | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-outline"></div>
+
+    <!-- Background Canvas for Particles -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo">Zeeshaan<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="greeting">Hi, I'm</h2>
+            <h1 class="name">Zeeshaan A</h1>
+            <h3 class="tagline">
+                <span class="typing-text"></span><span class="cursor">&nbsp;</span>
+            </h3>
+            <p class="description">
+                A 2nd Year Computer Science (AI & ML) student passionate about building solutions and exploring the world of technology.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary-btn">View Projects</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-wrapper">
+                <img src="prof pic.jpg" alt="Zeeshaan A">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="section-title">
+            <h2>About <span>Me</span></h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text glass-card">
+                <p>
+                    I am an ambitious and adaptable <strong>B.Sc Computer Science (AI & ML)</strong> student at Vels University, Chennai. 
+                    As a fast learner, I thrive in dynamic environments and am deeply passionate about <strong>Java development</strong> and emerging technologies such as new machine learning technologies.
+                </p>
+                <p>
+                    My ultimate career goal is to become an <strong>Entrepreneur</strong>. I believe in combining technical expertise with business acumen to create innovative solutions that solve real-world problems.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Fast Learner</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fa-solid fa-code-branch"></i>
+                        <span>Adaptable</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fa-solid fa-rocket"></i>
+                        <span>Passionate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="section-title">
+            <h2>My <span>Skills</span></h2>
+        </div>
+        <div class="skills-container">
+            <div class="skills-category glass-card">
+                <h3>Technical Skills</h3>
+                <div class="skill-bars">
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>Java</span>
+                        </div>
+                        <div class="progress-line" data-width="85%"><span></span></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line" data-width="75%"><span></span></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>C</span>
+                        </div>
+                        <div class="progress-line" data-width="80%"><span></span></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>MS Office</span>
+                        </div>
+                        <div class="progress-line" data-width="90%"><span></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category glass-card">
+                <h3>Soft Skills</h3>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill">
+                        <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h4>Fast Learner</h4>
+                    </div>
+                    <div class="soft-skill">
+                        <div class="skill-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+                        <h4>Adaptability</h4>
+                    </div>
+                    <div class="soft-skill">
+                        <div class="skill-icon"><i class="fa-solid fa-people-arrows"></i></div>
+                        <h4>Flexibility</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="section-title">
+            <h2>Featured <span>Projects</span></h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card glass-card">
+                <div class="project-img">
+                    <div class="project-overlay">
+                        <a href="#" class="view-btn"><i class="fa-solid fa-link"></i> View Details</a>
+                    </div>
+                    <div class="placeholder-img"><i class="fa-brands fa-java"></i></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Console App</span>
+                    </div>
+                    <h3>Student Management System</h3>
+                    <p>A comprehensive system designed to effectively manage student data, including names, IDs, and marks, with full CRUD capabilities.</p>
+                </div>
+            </div>
+            
+            <!-- Additional placeholder for aesthetics -->
+             <div class="project-card glass-card empty-card">
+                <div class="project-img">
+                    <div class="placeholder-img"><i class="fa-solid fa-laptop-code"></i></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">Coming Soon</span>
+                    </div>
+                    <h3>Next Big Project</h3>
+                    <p>Currently working on new innovative solutions. Stay tuned for updates on my latest developments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Languages Section -->
+    <section id="education" class="edu-lang section">
+        <div class="edu-lang-container">
+            <div class="education-section">
+                <div class="section-title">
+                    <h2>My <span>Education</span></h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item glass-card">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Present (2nd Year)</div>
+                        <h3>B.Sc Computer Science (AI & ML)</h3>
+                        <h4>Vels University, Chennai</h4>
+                        <p>Focusing on Artificial Intelligence and Machine Learning core concepts along with advanced computer science fundamentals.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="languages-section">
+                <div class="section-title">
+                    <h2>Languages <span>Known</span></h2>
+                </div>
+                <div class="languages-grid">
+                    <div class="lang-card glass-card">
+                        <div class="lang-circle" style="--percent: 90">
+                            <div class="inner-circle"><span>English</span></div>
+                        </div>
+                        <p>Fluent</p>
+                    </div>
+                    <div class="lang-card glass-card">
+                        <div class="lang-circle" style="--percent: 85">
+                            <div class="inner-circle"><span>Hindi</span></div>
+                        </div>
+                        <p>Fluent</p>
+                    </div>
+                    <div class="lang-card glass-card">
+                        <div class="lang-circle" style="--percent: 40">
+                            <div class="inner-circle"><span>Tamil</span></div>
+                        </div>
+                        <p>Basic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="section-title">
+            <h2>Get In <span>Touch</span></h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info glass-card">
+                <h3>Let's Connect</h3>
+                <p>I'm currently open for new opportunities and collaborations. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                
+                <div class="info-items">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Chennai, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>zeeshaanzeeshaan166@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/Zeeshaan18" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/zeeshaan-zeeshaan-690a58329" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <form class="contact-form glass-card">
+                <div class="input-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Subject" required>
+                </div>
+                <div class="input-group">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn submit-btn">
+                    Send Message <i class="fa-regular fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="current-year"></span> Zeeshaan A. All rights reserved.</p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
