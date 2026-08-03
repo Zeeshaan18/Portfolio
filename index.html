@@ -74,11 +74,7 @@
         <div class="about-content">
             <div class="about-text glass-card">
                 <p>
-                    I am an ambitious and adaptable <strong>B.Sc Computer Science (AI & ML)</strong> student at Vels University, Chennai. 
-                    As a fast learner, I thrive in dynamic environments and am deeply passionate about <strong>Java development</strong> and emerging technologies such as new machine learning technologies.
-                </p>
-                <p>
-                    My ultimate career goal is to become an <strong>Entrepreneur</strong>. I believe in combining technical expertise with business acumen to create innovative solutions that solve real-world problems.
+                    A fast learner, adaptable and flexible individual passionate about Java programming and technology. Currently pursuing B.Sc CS (AI & ML) and aiming to become an entrepreneur by building innovative tech solutions.
                 </p>
                 <div class="about-highlights">
                     <div class="highlight">
@@ -159,35 +155,212 @@
         <div class="section-title">
             <h2>Featured <span>Projects</span></h2>
         </div>
+        
+        <!-- Category Filter Tabs -->
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ai">AI</button>
+            <button class="filter-btn" data-filter="full-stack">Full Stack</button>
+            <button class="filter-btn" data-filter="web-app">Web App</button>
+        </div>
+
         <div class="projects-grid">
-            <div class="project-card glass-card">
+            <!-- 1. Interview Pilot AI (Featured) -->
+            <div class="project-card animate-entrance" data-id="interview-pilot-ai" data-filters="ai full-stack">
+                <div class="featured-ribbon">⭐ Featured</div>
                 <div class="project-img">
+                    <img src="assets/projects/interview_pilot_ai.png" alt="Interview Pilot AI" loading="lazy">
                     <div class="project-overlay">
-                        <a href="#" class="view-btn"><i class="fa-solid fa-link"></i> View Details</a>
+                        <button class="view-btn"><i class="fa-solid fa-eye"></i> View Details</button>
                     </div>
-                    <div class="placeholder-img"><i class="fa-brands fa-java"></i></div>
                 </div>
                 <div class="project-info">
-                    <div class="project-tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">Console App</span>
+                    <div class="project-stats-bar">
+                        <span class="project-stat-item"><i class="fa-solid fa-layer-group"></i> AI Platform</span>
+                        <span class="project-stat-item"><i class="fa-solid fa-screwdriver-wrench"></i> 6 Techs</span>
+                        <span class="project-stat-item"><i class="fa-solid fa-list-check"></i> 5 Features</span>
                     </div>
-                    <h3>Student Management System</h3>
-                    <p>A comprehensive system designed to effectively manage student data, including names, IDs, and marks, with full CRUD capabilities.</p>
+                    <h3>Interview Pilot AI</h3>
+                    <p class="project-desc">An intelligent interview preparation platform that generates technical interview questions, evaluates responses, provides AI-powered feedback, and tracks user performance to improve interview readiness.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="tech-badge"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="tech-badge"><i class="fa-solid fa-database"></i> MongoDB</span>
+                        <span class="tech-badge"><i class="fa-solid fa-robot"></i> OpenAI</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Zeeshaan18" target="_blank" class="action-btn github-btn">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" class="action-btn demo-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                    </div>
                 </div>
             </div>
-            
-            <!-- Additional placeholder for aesthetics -->
-             <div class="project-card glass-card empty-card">
+
+            <!-- 2. Interview Ace AI -->
+            <div class="project-card animate-entrance" data-id="interview-ace-ai" data-filters="ai">
                 <div class="project-img">
-                    <div class="placeholder-img"><i class="fa-solid fa-laptop-code"></i></div>
+                    <img src="assets/projects/interview_ace_ai.png" alt="Interview Ace AI" loading="lazy">
+                    <div class="project-overlay">
+                        <button class="view-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+                    </div>
                 </div>
                 <div class="project-info">
-                    <div class="project-tags">
-                        <span class="tag">Coming Soon</span>
+                    <div class="project-stats-bar">
+                        <span class="project-stat-item"><i class="fa-solid fa-layer-group"></i> Career AI</span>
+                        <span class="project-stat-item"><i class="fa-solid fa-screwdriver-wrench"></i> 6 Techs</span>
+                        <span class="project-stat-item"><i class="fa-solid fa-list-check"></i> 5 Features</span>
                     </div>
-                    <h3>Next Big Project</h3>
-                    <p>Currently working on new innovative solutions. Stay tuned for updates on my latest developments.</p>
+                    <h3>Interview Ace AI</h3>
+                    <p class="project-desc">A smart interview assistant that helps candidates practice HR and technical interviews using AI-generated questions, answer evaluation, and personalized improvement suggestions.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="tech-badge"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="tech-badge"><i class="fa-solid fa-database"></i> MongoDB</span>
+                        <span class="tech-badge"><i class="fa-solid fa-robot"></i> OpenAI</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Zeeshaan18" target="_blank" class="action-btn github-btn">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" class="action-btn demo-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. AI Resume Analyzer -->
+            <div class="project-card animate-entrance" data-id="ai-resume-analyzer" data-filters="ai">
+                <div class="project-img">
+                    <img src="assets/projects/resume_analyzer.png" alt="AI Resume Analyzer" loading="lazy">
+                    <div class="project-overlay">
+                        <button class="view-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-stats-bar">
+                        <span class="project-stat-item"><i class="fa-solid fa-layer-group"></i> AI Research</span>
+                        <span class="project-stat-item"><i class="fa-solid fa-screwdriver-wrench"></i> 6 Techs</span>
+                        <span class="project-stat-item"><i class="fa-solid fa-list-check"></i> 5 Features</span>
+                    </div>
+                    <h3>AI Resume Analyzer</h3>
+                    <p class="project-desc">An AI-powered resume analyzer that evaluates resumes, calculates ATS compatibility, identifies missing skills, and recommends improvements based on job descriptions.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="tech-badge"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="tech-badge"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="tech-badge"><i class="fa-solid fa-robot"></i> OpenAI</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Zeeshaan18" target="_blank" class="action-btn github-btn">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" class="action-btn demo-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. CodeForge AI -->
+            <div class="project-card animate-entrance" data-id="codeforge-ai" data-filters="ai web-app">
+                <div class="project-img">
+                    <img src="assets/projects/codeforge_ai.png" alt="CodeForge AI" loading="lazy">
+                    <div class="project-overlay">
+                        <button class="view-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-stats-bar">
+                        <span class="project-stat-item"><i class="fa-solid fa-layer-group"></i> Productivity</span>
+                        <span class="project-stat-item"><i class="fa-solid fa-screwdriver-wrench"></i> 5 Techs</span>
+                        <span class="project-stat-item"><i class="fa-solid fa-list-check"></i> 5 Features</span>
+                    </div>
+                    <h3>CodeForge AI</h3>
+                    <p class="project-desc">An AI-assisted coding platform that helps developers generate, optimize, debug, and understand code using artificial intelligence.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="tech-badge"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="tech-badge"><i class="fa-solid fa-robot"></i> OpenAI</span>
+                        <span class="tech-badge"><i class="fa-brands fa-css3-alt"></i> Tailwind</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Zeeshaan18" target="_blank" class="action-btn github-btn">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" class="action-btn demo-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Personal Expense Tracker AI -->
+            <div class="project-card animate-entrance" data-id="expense-tracker-ai" data-filters="ai full-stack web-app">
+                <div class="project-img">
+                    <img src="assets/projects/expense_tracker.png" alt="Personal Expense Tracker AI" loading="lazy">
+                    <div class="project-overlay">
+                        <button class="view-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-stats-bar">
+                        <span class="project-stat-item"><i class="fa-solid fa-layer-group"></i> Finance</span>
+                        <span class="project-stat-item"><i class="fa-solid fa-screwdriver-wrench"></i> 6 Techs</span>
+                        <span class="project-stat-item"><i class="fa-solid fa-list-check"></i> 5 Features</span>
+                    </div>
+                    <h3>Personal Expense Tracker AI</h3>
+                    <p class="project-desc">An AI-powered expense tracking application that monitors spending habits, categorizes expenses automatically, and provides financial insights with interactive dashboards.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="tech-badge"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="tech-badge"><i class="fa-solid fa-database"></i> MongoDB</span>
+                        <span class="tech-badge"><i class="fa-solid fa-chart-pie"></i> Chart.js</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Zeeshaan18" target="_blank" class="action-btn github-btn">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" class="action-btn demo-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Smart Student Tracker -->
+            <div class="project-card animate-entrance" data-id="student-tracker" data-filters="full-stack web-app">
+                <div class="project-img">
+                    <img src="assets/projects/student_tracker.png" alt="Smart Student Tracker" loading="lazy">
+                    <div class="project-overlay">
+                        <button class="view-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-stats-bar">
+                        <span class="project-stat-item"><i class="fa-solid fa-layer-group"></i> Full Stack</span>
+                        <span class="project-stat-item"><i class="fa-solid fa-screwdriver-wrench"></i> 5 Techs</span>
+                        <span class="project-stat-item"><i class="fa-solid fa-list-check"></i> 5 Features</span>
+                    </div>
+                    <h3>Smart Student Tracker</h3>
+                    <p class="project-desc">A comprehensive student management system that enables institutions to manage student records, attendance, academic performance, and progress through an intuitive dashboard.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="tech-badge"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="tech-badge"><i class="fa-solid fa-database"></i> MongoDB</span>
+                        <span class="tech-badge"><i class="fa-brands fa-css3-alt"></i> Tailwind</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Zeeshaan18" target="_blank" class="action-btn github-btn">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" class="action-btn demo-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -296,6 +469,17 @@
     <footer>
         <p>&copy; <span id="current-year"></span> Zeeshaan A. All rights reserved.</p>
     </footer>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="project-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close Details"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body">
+                <!-- Content injected dynamically via script.js -->
+            </div>
+        </div>
+    </div>
 
     <!-- Custom JS -->
     <script src="script.js"></script>
