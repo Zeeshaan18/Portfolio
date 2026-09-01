@@ -30,7 +30,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Typing Effect
-const textArray = ["Aspiring Entrepreneur", "Java Developer", "AI & ML Student"];
+const textArray = ["Full Stack Developer", "Building Scalable Web Applications", "AI & ML Student"];
 const typingText = document.querySelector('.typing-text');
 let textIndex = 0;
 let charIndex = 0;
@@ -342,34 +342,31 @@ const projectsData = [
         ]
     },
     {
-        id: "codeforge-ai",
-        title: "CodeForge AI",
+        id: "resume-builder",
+        title: "Resume Builder",
         featured: false,
-        category: "Developer Productivity",
-        filters: ["ai", "web-app"],
-        image: "assets/projects/codeforge_ai.png",
+        category: "Web Application",
+        filters: ["web-app"],
+        image: "assets/projects/resume_builder.png",
         github: "https://github.com/Zeeshaan18",
         demo: "#",
         stats: {
-            techCount: 5,
-            featuresCount: 5,
-            year: "2026",
-            type: "Academic Project"
+            techCount: 3,
+            featuresCount: 4,
+            year: "2025",
+            type: "Web Project"
         },
-        description: "An AI-assisted coding platform that helps developers generate, optimize, debug, and understand code using artificial intelligence.",
+        description: "A web-based resume builder that allows users to create and customize professional resumes easily.",
         techStack: [
-            { name: "React", icon: "fa-brands fa-react" },
-            { name: "Node.js", icon: "fa-brands fa-node-js" },
-            { name: "Express.js", icon: "fa-solid fa-server" },
-            { name: "OpenAI API", icon: "fa-solid fa-robot" },
-            { name: "Tailwind CSS", icon: "fa-brands fa-css3-alt" }
+            { name: "HTML", icon: "fa-brands fa-html5" },
+            { name: "CSS", icon: "fa-brands fa-css3-alt" },
+            { name: "JavaScript", icon: "fa-brands fa-js" }
         ],
         features: [
-            "AI Code Generation: Prompt-based generation of robust snippets or boilerplate setups.",
-            "Code Explanation: Human-readable walkthroughs explaining logic flows and algorithms.",
-            "Debugging Assistant: Scans code for syntax and logical bugs and presents automated patch fixes.",
-            "Code Optimization: Profiles logic to suggest speed improvements and memory foot-print savings.",
-            "Multiple Languages: Support for Java, Python, C, JavaScript, and standard web formats."
+            "Interactive Editor: Real-time form fields to enter and customize personal and professional details.",
+            "Live Preview: Instant visual updates showing the formatted resume as changes are typed.",
+            "Custom Styling: Options to personalize themes, typography, and section layouts.",
+            "Export & Download: Clean, printable and exportable layout ready for job applications."
         ]
     },
     {
